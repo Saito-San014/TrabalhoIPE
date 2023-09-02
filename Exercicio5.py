@@ -69,6 +69,7 @@ def init():
                     "Município com mais votos em branco", 
                     "Município com mais votos nulos",
                     "Município com mais votos válidos"]
+    dfResumo = pd.DataFrame()
     for mun in municipios:
         if mun.eleitores > dataResumo["quantidade"][0]:
             dataResumo["nome"][0] = mun.nome
@@ -95,7 +96,6 @@ def init():
         dfResumo = pd.DataFrame(dataResumo,index=[campoResumo])
         print("\n",mun.nome)
         print(dfMun)
-        print(dfResumo)
-    
+    print(dfResumo,"\n")
     print(df)
     #getattr(mun, campo) / mun.eleitores for campo in newCampos if type(getattr(mun, campo)) =="int" /
