@@ -8,5 +8,5 @@ def init():
     if numeros[1] > numMaior:
         numMaior = numeros[1]
     if numeros[2] > numMaior:
-        numMaior = numeros[1]
+        numMaior = numeros[2]
     print(f"O maior numero digitado é o {numMaior}")

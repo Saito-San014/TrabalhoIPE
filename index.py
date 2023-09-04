@@ -3,7 +3,7 @@ import Exercicio2
 import Exercicio3
 import Exercicio4
 import Exercicio5
-
+import Exercicio6
 
 
 sair = True
@@ -20,6 +20,8 @@ while sair:
         Exercicio4.init()
     elif numExerc == 5:
         Exercicio5.init()
+    elif numExerc == 6:
+        Exercicio6.init()
     else:
         sair = False
         break
